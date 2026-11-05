@@ -4,6 +4,7 @@ import csv
 import datetime as dt
 import sqlite3
 from pathlib import Path
+from contextlib import closing
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
@@ -87,7 +88,7 @@ def run(raw=RAW, db=DB, output=OUT / "project_performance.csv"):
     validate(projects, expenses, milestones)
     db.parent.mkdir(parents=True, exist_ok=True)
     sql = (ROOT / "sql" / "project_performance.sql").read_text(encoding="utf-8")
-    with sqlite3.connect(db) as conn:
+    with closing(sqlite3.connect(db)) as conn:
         with conn:
             conn.executescript("""
             CREATE TABLE IF NOT EXISTS projects (project_id TEXT PRIMARY KEY, project_name TEXT, start_date TEXT, budget REAL);
