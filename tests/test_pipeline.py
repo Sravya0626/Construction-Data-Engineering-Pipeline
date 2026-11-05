@@ -2,6 +2,7 @@ import csv
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 from src.pipeline import generate_data, read_table, run, validate
 
