@@ -1,0 +1,9 @@
+# Illustrative dbt model tests; requires configuring an executable dbt project.
+version: 2
+models:
+  - name: project_spend
+    columns:
+      - name: project_id
+        data_tests:
+          - not_null
+          - unique

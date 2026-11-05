@@ -1,0 +1,5 @@
+project_id,project_name,budget,actual_cost,budget_variance,budget_utilization_pct,delayed_milestones,total_delay_days,budget_status
+P101,Highway Interchange,1200000.0,1270000.0,-70000.0,105.83,2,15,OVER_BUDGET
+P102,Bridge Reinforcement,800000.0,570000.0,230000.0,71.25,0,0,WITHIN_BUDGET
+P103,Hospital Expansion,2000000.0,1200000.0,800000.0,60.0,1,15,WITHIN_BUDGET
+P104,Water Treatment Upgrade,950000.0,990000.0,-40000.0,104.21,0,0,OVER_BUDGET

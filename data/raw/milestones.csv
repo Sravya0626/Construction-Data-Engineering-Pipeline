@@ -1,0 +1,6 @@
+milestone_id,project_id,milestone_name,planned_date,actual_date
+M001,P101,Foundation,2026-03-01,2026-03-12
+M002,P101,Concrete,2026-05-01,2026-05-05
+M003,P102,Design Approval,2026-04-05,2026-04-04
+M004,P103,Permit,2026-05-20,2026-06-04
+M005,P104,Excavation,2026-04-01,2026-04-01
